@@ -1,0 +1,28 @@
+{
+  "name": "todolist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e .js,.mustache,.css,.json app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-validator": "^3.2.1",
+    "jsonfile": "^3.0.1",
+    "mustache-express": "^1.2.5",
+    "update-json-file": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "boilerplate": {
+    "name": "express-skeleton",
+    "version": "1.0.0",
+    "author": "Michael Sweeney <jfmike@gmail.com> (https://github.com/overthemike)",
+    "license": "MIT"
+  },
+  "description": ""
+}

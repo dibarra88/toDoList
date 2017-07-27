@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+
+<body>
+  <h1>ToDo List</h1>
+  {{#errors}}
+  <div class="err">{{msg}}</div>
+  {{/errors}}
+  <form action: '/' formaction='/' method="post">
+    <div>
+      <input class="newTodo" type="text" name="addTodo" placeholder="Add a todo.."></input>
+      <button type="submit" class="submitNewTodo" name="submit">Add todo</button>
+    </div>
+    <div>
+      <ul class="todo-list">
+        {{#todoList}} {{^complete}}
+        <li>
+          <button type="submit" formaction="/completed" name="complete" value="{{description}}">Mark Complete </button><span>{{description}}</span>
+        </li>
+        {{/complete}} {{/todoList}}
+      </ul>
+    </div>
+  </form>
+  <div>
+    <h2>Completed Tasks</h2>
+    <ul class="todo-list">
+      {{#todoList}} {{#complete}}
+      <li>
+        <del>{{description}}</del>
+      </li>
+      {{/complete}} {{/todoList}}
+    </ul>
+  </div>
+</body>
+
+</html>

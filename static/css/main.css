@@ -1,0 +1,40 @@
+html {box-sizing:border-box;}
+*, *:before, *:after {box-sizing:inherit;}
+
+body {
+  margin:0 auto;
+  padding:0;
+  width: 800px;
+  /* border: 1px solid black; */
+  font-size: 1.5em;
+  /* text-align: center; */
+}
+
+h1 {
+  color:black;
+  text-align: center;
+}
+.err{
+  color: red;
+}
+/* form{
+  border: 1px solid red;
+} */
+.newTodo{
+  width: 400px;
+  height: 30px;
+  outline: none;
+  font-size: 0.8em;
+}
+.submitNewTodo{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  outline: none;
+}
+ul {
+  list-style-type: none;
+}
+span{
+  padding-left:25px;
+}
